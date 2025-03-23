@@ -1,38 +1,29 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-.input-container {
-    position: fixed;
-    bottom: 20px;
-    display: flex;
-    gap: 10px;
-}
-.goal-container {
-    position: fixed;
-    top: 20px;
-}
 .progress-container {
-    position: relative;
-    width: 50px;
-    height: 300px;
-    border: 2px solid #000;
-    margin-top: 50px;
+  position: relative;
+  width: 100%;
+  height: 30px; /* Adjust height as needed */
+  background-color: #f3f3f3; /* Background color for the container */
 }
+
 .progress-bar {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
+  height: 100%;
+  background-color: #4caf50; /* Color of the progress bar */
+  position: relative;
+  z-index: 1; /* Ensures the bar is below the lines */
 }
-.progress-lines .line {
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: black;
+
+.bar-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Ensures the lines are above the bar */
+}
+
+.bar-line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: white; /* Color of the bar lines */
 }
