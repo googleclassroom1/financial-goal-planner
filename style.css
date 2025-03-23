@@ -10,6 +10,7 @@
   background-color: #4caf50; /* Color of the progress bar */
   position: relative;
   z-index: 1; /* Ensures the bar is below the lines */
+  color: black;
 }
 
 .bar-lines {
