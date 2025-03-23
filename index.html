@@ -1,1 +1,22 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Goal Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="goal-container">
+        Goal: $<input type="number" id="goal" placeholder="Enter goal amount" />
+    </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <div class="input-container">
+        Current Amount: $<input type="number" id="current" placeholder="Enter current amount" />
+        <button onclick="updateProgress()">Update</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
